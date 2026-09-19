@@ -1,0 +1,2783 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600&display=swap); @import url(https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap); .hot-games.wrapper {
+    height: 180px;
+    overflow: hidden;
+    position: relative
+}
+
+.hot-games .img-container {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    position: absolute
+}
+
+.hot-games .games-leave-active {
+    -webkit-animation: leave 25s linear;
+    animation: leave 25s linear
+}
+
+.hot-games .games-enter-active {
+    -webkit-animation: enter 25s linear;
+    animation: enter 25s linear
+}
+
+.hot-games a {
+    color: inherit
+}
+
+.hot-games .game-item {
+    background-color: #000;
+    height: 143px;
+    margin-right: 5px;
+    padding-top: 15px;
+    position: relative;
+    text-align: center;
+    width: 120px
+}
+
+.hot-games .game-item img {
+    border: 1px solid #D4AF37;
+    border-radius: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden
+}
+
+.hot-games .game-item .game-title {
+    background-color: #0B2A0F;
+    color: #fff;
+    height: 60px;
+    padding: 0 15px;
+    text-align: left;
+    width: 120px
+}
+
+@-webkit-keyframes leave {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%)
+    }
+}
+
+@keyframes leave {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%)
+    }
+}
+
+@-webkit-keyframes enter {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%)
+    }
+
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@keyframes enter {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%)
+    }
+
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+.float-left {
+    float: left
+}
+
+.float-right {
+    float: right
+}
+
+.flex-space-btw {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.flex-space-btw,.flex-start {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex
+}
+
+.flex-start {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start
+}
+
+.center-text {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    place-content: space-between
+}
+
+.mobile .center-position {
+    text-align: center
+}
+
+.right-text {
+    text-align: right
+}
+
+.mobile .right-text {
+    text-align: center
+}
+
+.flex-display {
+    display: -webkit-flex;
+    display: flex
+}
+
+.mobile .deposit-section {
+    background: linear-gradient(0deg,hsla(0,0%,45%,.2),hsla(0,0%,45%,.2));
+    border-radius: 8px;
+    display: inline-block;
+    padding: 15px;
+    position: relative
+}
+
+.mobile .deposit-section:after {
+    background: linear-gradient(180deg,#67C94A,#000);
+    border-radius: 14px;
+    content: "";
+    height: 5px;
+    height: 100%;
+    left: 12px;
+    left: -1px;
+    padding: 0!important;
+    position: absolute;
+    top: 0;
+    top: -1px;
+    width: calc(100% - 24px);
+    width: calc(100% + 2px);
+    z-index: -1
+}
+
+.deposit-withdraw-div {
+    padding: 0 15px
+}
+
+.mobile .deposit-withdraw-div {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.deposit-withdraw-div .deposit-withdraw-section {
+    background: url(https://files.sitestatic.net/assets/imgs/kixplays_game_bg.png) no-repeat 0 0,linear-gradient(180deg,#1B5E20,#030703);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid linear-gradient(180deg,#67C94A,#000);
+    border-radius: 14px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 1px 15px 1px 1px;
+    padding: 35px 15px 30px;
+    position: relative;
+    width: 68%
+}
+
+.deposit-withdraw-div .deposit-withdraw-section:after {
+    background: linear-gradient(180deg,#67C94A,#000);
+    border-radius: 14px;
+    content: "";
+    height: 5px;
+    height: 100%;
+    left: 12px;
+    left: -1px;
+    padding: 0!important;
+    position: absolute;
+    top: 0;
+    top: -1px;
+    width: calc(100% - 24px);
+    width: calc(100% + 2px);
+    z-index: -1
+}
+
+.mobile .deposit-withdraw-div .deposit-withdraw-section {
+    background: transparent;
+    border: 0 solid linear-gradient(180deg,#67C94A,#000);
+    margin-right: 0;
+    padding: 0;
+    width: 100%
+}
+
+.mobile .deposit-withdraw-div .deposit-withdraw-section:after {
+    display: none
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box {
+    margin-top: 0;
+    width: 48%
+}
+
+.mobile .deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%
+}
+
+.mobile .deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box:last-child {
+    margin-top: 25px
+}
+
+.mobile .deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box:first-child {
+    margin-top: 0
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%
+}
+
+.mobile .deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top {
+    display: inline-block;
+    text-align: center;
+    width: 100%
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top .deposit-withdraw-icon {
+    display: -webkit-flex;
+    display: flex;
+    font-size: 35px;
+    place-items: center;
+    width: 70px
+}
+
+.mobile .deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top .deposit-withdraw-icon {
+    width: 100%
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top .deposit-withdraw-icon .circular-progress-bar {
+    position: relative
+}
+
+.mobile .deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top .deposit-withdraw-icon .circular-progress-bar {
+    display: inline-block;
+    width: 100%
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top .deposit-withdraw-icon .circular-progress-bar .footer-atn-icon {
+    color: #fff;
+    font-size: 25px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 10px;
+    z-index: 9999
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top .deposit-withdraw-content {
+    color: #fff;
+    display: inline-block;
+    float: left;
+    place-content: space-between;
+    width: 100%
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top .deposit-withdraw-content div .deposit-withdraw-text1 {
+    font-family: Rammetto One,cursive;
+    font-size: 16px;
+    text-transform: uppercase
+}
+
+@media (min-width: 461px) and (max-width:660px) {
+    .deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top .deposit-withdraw-content div .deposit-withdraw-text1 {
+        font-size:16px
+    }
+}
+
+@media (max-width: 460px) {
+    .deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top .deposit-withdraw-content div .deposit-withdraw-text1 {
+        font-size:15px
+    }
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top .deposit-withdraw-content div:first-child .deposit-withdraw-text1 {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg,#fff 0,#fff 100%,#fff 0,#fff 0);
+    -webkit-background-clip: text
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top .deposit-withdraw-content div .deposit-withdraw-text2 {
+    color: #fff;
+    display: block;
+    font-size: 12px
+}
+
+.mobile .deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top .deposit-withdraw-content div .deposit-withdraw-text2 {
+    font-size: 11px
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-top .deposit-withdraw-content div:last-child {
+    display: -webkit-flex;
+    display: flex;
+    place-items: end
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-loader {
+    background-color: #1B5E20;
+    border-radius: 10px;
+    height: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+/* =======================================================
+   ANIMASI UNTUK GRADASI EMAS MENGALIR
+   ======================================================= */
+@keyframes goldLoaderFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .deposit-withdraw-box .deposit-withdraw-loader span {
+    background: linear-gradient(90deg, #D4AF37 0%, #67C94A 50%, #FFF4C2 100%) !important; /* Gradasi Biru Laut ke Biru Neon dan Putih Es */
+    background-size: 200% auto !important;
+    animation: lighthouseLoaderFlow 2s linear infinite !important; /* Efek warna biru mengalir dinamis */
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.8), 0 0 4px rgba(140, 107, 22, 0.5) !important; /* Efek neon biru menyala */
+    border-radius: 10px;
+    height: 100%;
+    position: absolute;
+    width: 30%; /* Mempertahankan lebar bawaan script asli */
+    transition: width 0.3s ease;
+}
+
+/* Animasi pendukung untuk loader jika belum ada */
+@keyframes lighthouseLoaderFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div {
+    margin-top: 50px;
+    width: 100%
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div .icon-wrp {
+    background: linear-gradient(180deg,#FFD95A 0,#FFF4C2 100%,#3FAE2A 0,#fff 0);
+    box-shadow: 0 -1px 1px 1px rgba(0,0,0,.15)
+}
+
+.mobile .deposit-withdraw-div .deposit-withdraw-section .support-div {
+    margin-top: 0
+}
+
+@media (max-width: 767px) {
+    .deposit-withdraw-div .deposit-withdraw-section .support-div .carousel-inner {
+        border-bottom:1px solid #1B5E20;
+        border-top: 0 solid #1B5E20;
+        margin-top: 20px
+    }
+
+    .deposit-withdraw-div .deposit-withdraw-section .support-div .carousel-inner .item {
+        padding: 30px 0
+    }
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div .support-box {
+    display: -webkit-flex;
+    display: flex
+}
+
+@media (max-width: 767px) {
+    .deposit-withdraw-div .deposit-withdraw-section .support-div .support-box {
+        -webkit-flex-wrap:wrap;
+        flex-wrap: wrap
+    }
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .contact-item {
+    width: 50%
+}
+
+@media (max-width: 767px) {
+    .deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .contact-item {
+        margin-top:15px;
+        width: 48%
+    }
+
+    .deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .contact-item:nth-child(-n+2) {
+        margin-top: 0
+    }
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .support-card-width {
+    width: 100%
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .skype-card-width {
+    width: 43%
+}
+
+@media (min-width: 661px) and (max-width:768px) {
+    .deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .skype-card-width {
+        width:50%
+    }
+}
+
+@media (min-width: 461px) and (max-width:660px) {
+    .deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .skype-card-width {
+        width:50%
+    }
+}
+
+@media (max-width: 460px) {
+    .deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .skype-card-width {
+        width:50%
+    }
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .support-card {
+    place-items: center
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .support-card .icon-circle-border {
+    background: linear-gradient(180deg,#67C94A 0,#0B2A0F);
+    border-radius: 4px;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 18px;
+    height: 2em;
+    place-content: center;
+    place-items: center;
+    width: 2em
+}
+
+.mobile .deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .support-card .icon-circle-border {
+    height: 45px;
+    width: 45px
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .support-card .icon-circle-border .icon-div {
+    background: #0B2A0F;
+    border-radius: 4px 4px 0 0;
+    display: -webkit-flex;
+    display: flex;
+    height: 94%;
+    place-content: center;
+    place-items: center;
+    width: 94%
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .support-card .icon-circle-border .icon-div i {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(1turn,#fff,#fff 43.57%,#fff);
+    -webkit-background-clip: text
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .support-card .support-content {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    padding-left: 15px;
+    width: calc(100% - 2em)
+}
+
+@media (max-width: 460px) {
+    .deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .support-card .support-content {
+        width:calc(100% - 45px)
+    }
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .support-card .support-content .line-font {
+    color: #FFF4C2;
+    font-size: 15px;
+    font-weight: 400
+}
+
+.mobile .deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .support-card .support-content .line-font {
+    font-size: 13px
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .support-card .support-content .mail-color {
+    -webkit-text-fill-color: transparent;
+    word-wrap: break-word;
+    background: linear-gradient(180deg,#fff 0,#fff 100%,#fff 0,#fff 0);
+    -webkit-background-clip: text;
+    font-size: 12px;
+    font-weight: 900
+}
+
+.deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .support-card .support-content .support-font {
+    color: #FFF4C2;
+    font-size: 15px;
+    font-weight: 600
+}
+
+.mobile .deposit-withdraw-div .deposit-withdraw-section .support-div .support-box .support-card .support-content .support-font {
+    font-size: 13px
+}
+
+.info-section {
+    background: linear-gradient(0deg,hsla(0,0%,45%,.2),hsla(0,0%,45%,.2));
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    position: relative;
+    width: 32%
+}
+
+.info-section:after {
+    content: "";
+    height: 5px;
+    left: 12px;
+    position: absolute;
+    top: 0;
+    width: calc(100% - 24px)
+}
+
+.mobile .info-section {
+    background: transparent;
+    border-top: none;
+    width: 100%
+}
+
+.mobile .info-section:after {
+    display: none
+}
+
+.info-section .div-card {
+    border-bottom: 1px solid #8C6B16;
+    display: -webkit-flex;
+    display: flex;
+    padding: 15px 0;
+    place-content: space-between
+}
+
+.info-section .div-card:last-child {
+    border-bottom: none
+}
+
+.info-section .div-card .text {
+    color: #FFF4C2;
+    font-size: 15px;
+    font-weight: 600;
+    place-items: center
+}
+
+.info-section .div-card .a-href-div {
+    background: linear-gradient(180deg,#67C94A,#000);
+    border-radius: 5px;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    height: 35px;
+    min-width: 75px;
+    place-content: center;
+    place-items: center;
+    width: inherit
+}
+
+.info-section .div-card .a-href-div a {
+    background: #0B2A0F;
+    border-radius: 5px;
+    color: #FFF4C2;
+    display: -webkit-flex;
+    display: flex;
+    height: 90%;
+    place-content: center;
+    place-items: center;
+    text-decoration: none!important;
+    width: 95%
+}
+
+.mobile .info-section .div-card .a-href-div a {
+    height: 94%;
+    width: 97%
+}
+
+.circle_recommended_games {
+    margin-top: 50px
+}
+
+.mobile .circle_recommended_games {
+    margin-top: 0
+}
+
+.circle_recommended_games .popular-section {
+    padding: 30px 0 0!important
+}
+
+.circle_recommended_games .popular-section .btn-link.btn-prev {
+    background: #0B2A0F;
+    border-radius: 50%;
+    height: 50px;
+    left: 0!important;
+    right: auto!important;
+    top: 1rem!important;
+    width: 50px
+}
+
+.circle_recommended_games .popular-section .btn-link.btn-prev:hover:before {
+    background: #0B2A0F
+}
+
+.circle_recommended_games .popular-section .btn-link.btn-prev:before {
+    /* Gradasi dari Biru Neon (#67C94A) ke Biru Gelap/Hitam (#030703) */
+    background: linear-gradient(90deg, #67C94A, #030703) !important;
+    border-radius: 50%;
+    content: "";
+    height: 100%;
+    left: -1px;
+    padding: 0 !important;
+    position: absolute;
+    top: -1px;
+    width: calc(100% + 2px);
+    z-index: -1;
+}
+
+.mobile .circle_recommended_games .popular-section .btn-link.btn-prev {
+    height: 35px;
+    top: 2rem!important;
+    width: 35px
+}
+
+.circle_recommended_games .popular-section .btn-link.btn-next {
+    background: #0B2A0F;
+    border-radius: 50%;
+    height: 50px;
+    top: 1rem!important;
+    width: 50px
+}
+
+.circle_recommended_games .popular-section .btn-link.btn-next:hover:before {
+    background: #0B2A0F
+}
+
+.circle_recommended_games .popular-section .btn-link.btn-next:before {
+    /* Gradasi dari Biru Neon (#67C94A) ke Biru Gelap/Hitam (#030703) */
+    background: linear-gradient(270deg, #67C94A, #030703) !important;
+    border-radius: 50%;
+    content: "";
+    height: 100%;
+    left: -1px;
+    padding: 0 !important;
+    position: absolute;
+    top: -1px;
+    width: calc(100% + 2px);
+    z-index: -1;
+}
+
+.mobile .circle_recommended_games .popular-section .btn-link.btn-next {
+    height: 35px;
+    top: 2rem!important;
+    width: 35px
+}
+
+.g-slider-wrapper .content-wrapper {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    overflow: hidden
+}
+
+.g-slider-wrapper .content-wrapper .round {
+    margin: 0 auto
+}
+
+.g-slider-wrapper ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: none;
+    flex: none;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 2px!important
+}
+
+.mobile .g-slider-wrapper ul {
+    padding: 0!important
+}
+
+.g-slider-wrapper ul li {
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s,-webkit-transform .2s
+}
+
+.g-slider-wrapper ul li:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05)
+}
+
+.g-slider-wrapper ul .round_recommended_game {
+    border-radius: 50px!important;
+    height: 70px;
+    margin: 6px 10px!important
+}
+
+.g-slider-wrapper ul .round_recommended_game:before {
+    border-radius: 50px!important
+}
+
+.mobile .g-slider-wrapper ul .round_recommended_game {
+    margin: 6px 10px!important
+}
+
+.g-slider-wrapper ul .round_recommended_game img {
+    max-width: 100%;
+    width: 70px
+}
+
+.g-slider-wrapper .lottery-title-center {
+    margin-top: 90px;
+    place-content: center!important
+}
+
+@media (max-width: 460px) {
+    .g-slider-wrapper .lottery-title-center {
+        margin-top:70px
+    }
+}
+
+.g-slider-wrapper .title-center {
+    margin-top: 60px;
+    place-content: center!important
+}
+
+.mobile .g-slider-wrapper .title-center {
+    margin-top: 70px
+}
+
+.g-slider-wrapper .title-wrapper {
+    -webkit-align-content: center;
+    align-content: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.g-slider-wrapper .pagi-wrp .btn {
+    border: 1px solid;
+    height: 40px;
+    width: 40px
+}
+
+.mobile .g-slider-wrapper .pagi-wrp {
+    display: none
+}
+
+.g-slider-wrapper a.game-box,.g-slider-wrapper div.game-box {
+    border-radius: 4px 4px 0 0;
+    height: 85px;
+    width: 110px
+}
+
+.desktop .common-top-section .g-slider-wrapper a.game-box,.desktop .common-top-section .g-slider-wrapper div.game-box {
+    margin-right: 0
+}
+
+.g-slider-wrapper a.game-box>img,.g-slider-wrapper div.game-box>img {
+    background: #000;
+    border-radius: 15px;
+    height: 110px;
+    width: 110px
+}
+
+.desktop .g-slider-wrapper a.game-box>img,.desktop .g-slider-wrapper div.game-box>img {
+    height: 150px;
+    width: 150px
+}
+
+.g-slider-wrapper a.game-box .game_brand,.g-slider-wrapper div.game-box .game_brand {
+    margin-bottom: 15px;
+    text-align: left
+}
+
+.mobile .g-slider-wrapper a.game-box .game_brand,.mobile .g-slider-wrapper div.game-box .game_brand {
+    margin-bottom: 10px
+}
+
+.g-slider-wrapper a.game-box .game_brand_logo,.g-slider-wrapper div.game-box .game_brand_logo {
+    display: inline-block;
+    height: 50px;
+    margin-right: 10px;
+    width: 50px
+}
+
+.mobile .g-slider-wrapper a.game-box .game_brand_logo,.mobile .g-slider-wrapper div.game-box .game_brand_logo {
+    height: 30px;
+    margin-right: 5px;
+    width: 30px
+}
+
+.g-slider-wrapper a.game-box .game_brand_name,.g-slider-wrapper div.game-box .game_brand_name {
+    color: #fff;
+    display: inline-block!important;
+    font-family: Sora,sans-serif;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+.mobile .g-slider-wrapper a.game-box .game_brand_name,.mobile .g-slider-wrapper div.game-box .game_brand_name {
+    font-size: 10px
+}
+
+.g-slider-wrapper a.game-box.round,.g-slider-wrapper div.game-box.round {
+    height: auto;
+    width: auto
+}
+
+.g-slider-wrapper a.game-box.round>img,.g-slider-wrapper div.game-box.round>img {
+    border-radius: 50%;
+    height: auto;
+    max-width: 70px;
+    width: 70px
+}
+
+.desktop .g-slider-wrapper a.game-box.round>img,.desktop .g-slider-wrapper div.game-box.round>img {
+    height: auto;
+    max-width: 100%;
+    width: auto
+}
+
+.desktop .g-slider-wrapper a.game-box.round,.desktop .g-slider-wrapper div.game-box.round {
+    height: auto;
+    max-width: 100%;
+    width: 100px
+}
+
+.g-slider-wrapper .game-title {
+    color: #fff;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 4px;
+    text-align: left
+}
+
+.mobile .g-slider-wrapper .game-title {
+    font-size: 11.2px;
+    padding-left: 7px
+}
+
+.g-slider-wrapper .game-title img.logo {
+    height: 18px;
+    width: 18px
+}
+
+.g-slider-wrapper.hot .game-title {
+    background: transparent
+}
+
+.g-slider-wrapper.recommend {
+    position: relative
+}
+
+.g-slider-wrapper.new .game-title {
+    background: #1B5E20
+}
+
+.g-slider-wrapper .btn-link {
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    position: absolute;
+    text-decoration: none;
+    top: -1rem;
+    width: 40px
+}
+
+.g-slider-wrapper .btn-link.btn-prev {
+    background: #0B2A0F;
+    right: 45px
+}
+
+.g-slider-wrapper .btn-link.btn-next {
+    background: #0B2A0F;
+    right: 0
+}
+
+.g-slider-wrapper .btn-link span {
+    border-radius: 50%;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+    place-content: center;
+    place-items: center;
+    position: relative;
+    width: 100%
+}
+
+.jackpot .text-content {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.gradient-bg {
+    background: linear-gradient(0deg,hsla(0,0%,45%,.2),hsla(0,0%,45%,.2));
+    border-radius: 16px
+}
+
+.common-section {
+    margin-top: 35px;
+    overflow: hidden
+}
+
+.popular-section {
+    border-radius: 14px;
+    padding: 50px 0 0!important
+}
+
+.mobile .popular-section {
+    padding: 20px 0 0!important
+}
+
+.popular-section .btn-link {
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    position: absolute;
+    text-decoration: none;
+    top: -4rem;
+    width: 40px
+}
+
+.mobile .popular-section .btn-link {
+    height: 30px;
+    width: 30px
+}
+
+.popular-section .btn-link.btn-prev {
+    background: #0B2A0F;
+    right: 45px
+}
+
+.popular-section .btn-link.btn-prev:hover {
+    box-shadow: 3px 4px 4px rgba(0,0,0,.33);
+    opacity: .8
+}
+
+.popular-section .btn-link.btn-prev:hover i {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px)
+}
+
+.popular-section .btn-link.btn-prev i {
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out
+}
+
+.popular-section .btn-link.btn-next {
+    background: #0B2A0F;
+    right: 0
+}
+
+.popular-section .btn-link.btn-next:hover {
+    box-shadow: 3px 4px 4px rgba(0,0,0,.33);
+    opacity: .8
+}
+
+.popular-section .btn-link.btn-next:hover i {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px)
+}
+
+.popular-section .btn-link.btn-next i {
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out
+}
+
+.popular-section .btn-link span {
+    border-radius: 50%;
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+    place-content: center;
+    place-items: center;
+    position: relative;
+    width: 100%
+}
+
+.top-section {
+    position: relative
+}
+
+.top-section .top-section-inner {
+    position: absolute;
+    top: calc(50% - 25px);
+    width: 100%;
+    z-index: 99
+}
+
+.Popular-slider {
+    position: relative
+}
+
+.promotion-section .center-position {
+    border-radius: 14px;
+    overflow: hidden;
+    padding: 1px;
+    position: relative
+}
+
+.promotion-section .center-position:after {
+    background: linear-gradient(180deg,#67C94A,#000);
+    border-radius: 14px;
+    content: "";
+    height: 5px;
+    height: 100%;
+    left: 12px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: calc(100% - 24px);
+    width: calc(100% + 2px);
+    z-index: -1
+}
+
+.common-group-section {
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 0;
+    padding: 0 0 50px
+}
+
+.common-group-section .common-section {
+    margin-top: 35px
+}
+
+.mobile .common-group-section .mobile_promo {
+    margin: 0
+}
+
+.info-section .div-card .text {
+    font-size: 13px
+}
+
+.common-title {
+    font-weight: 800;
+    margin-bottom: 30px
+}
+
+.top-section .common-title {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg, #67C94A 18.18%, #D4AF37 50%, #FFF4C2 69.12%) !important;
+    -webkit-background-clip: text !important;
+    display: none;
+    font-size: 38px;
+    color: #67C94A !important; /* Fallback warna jika background-clip tidak didukung */
+}
+
+.common-top-section {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 50px 0 0
+}
+
+.mobile .common-top-section {
+    background-position: 0 58%;
+    background-size: 100% auto;
+    padding: 0
+}
+
+.common-section-inner {
+    padding: 0
+}
+
+.lates-deposit-section {
+    margin-bottom: 50px
+}
+
+.circular-progress {
+    border: 1px solid #0B2A0F;
+    border-radius: 50%;
+    height: 60px;
+    position: relative;
+    width: 60px
+}
+
+.circular-progress:after {
+    background-clip: content-box,border-box;
+    background-image: linear-gradient(#0B2A0F,#0B2A0F),linear-gradient(180deg,#fff,#FFD95A);
+    background-origin: border-box;
+    border: 6px double transparent;
+    border-radius: 50%;
+    width: 66px
+}
+
+.circular-progress:after,.circular-progress:before {
+    content: "";
+    height: 66px;
+    left: -3px;
+    position: absolute;
+    top: -3px
+}
+
+.circular-progress:before {
+    background-color: #0B2A0F;
+    width: 33px;
+    z-index: 8
+}
+
+.lgo-lw-wraper .width-40 {
+    background: url(https://files.sitestatic.net/assets/imgs/kixplays_game_bg.png) no-repeat 100% 0,linear-gradient(180deg,#1B5E20,#030703);
+    border-radius: 16px;
+    padding: 10px;
+    width: 100%
+}
+
+.lgo-lw-wraper .width-40 .common-title {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg,#fff 18.18%,#FFF4C2 69.12%);
+    -webkit-background-clip: text;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 15px
+}
+
+.lgo-lw-wraper .width-40 .flex-xs-center {
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.lgo-lw-wraper .theme-UL-style {
+    padding: 0
+}
+
+.site-footer {
+    margin-top: 0
+}
+
+.content {
+    margin-bottom: 0
+}
+
+.svc-advantage .circle-wrp {
+    background: #0B2A0F;
+    border-radius: 50%;
+    font-size: 30px;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    vertical-align: middle;
+    width: 2em
+}
+
+.svc-advantage .circle-wrp > i {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #D4AF37, #67C94A 50%, #FFF4C2 95.87%) !important;
+    -webkit-background-clip: text !important;
+    color: #67C94A !important;
+}
+
+.promotion-section .img-fluid {
+    border-radius: 14px;
+    width: 100%
+}
+
+.promotion-section .promotion-single-inner~.promotion-single-inner {
+    margin-top: 15px
+}
+
+.common-group-section {
+    margin-top: 35px
+}
+
+.common-group-section .common-section,.mobile .common-group-section {
+    margin-top: 15px
+}
+
+.mobile .common-group-section .common-section {
+    margin-bottom: 20px
+}
+
+.common-group-section .last-winner {
+    display: block;
+    margin: 50px 0
+}
+
+.mobile .common-group-section .last-winner {
+    margin: 20px 0
+}
+
+.mobile .common-group-section .last-winner .gradient-bg {
+    background: url(https://files.sitestatic.net/assets/imgs/kixplays_game_bg.png) no-repeat 0 0,linear-gradient(180deg,#1B5E20,#030703);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid linear-gradient(180deg,#67C94A,#000);
+    display: block;
+    padding: 5px 0
+}
+
+.mobile .common-group-section .last-winner .gradient-bg .lw-loop-content:before {
+    background: linear-gradient(180deg,#67C94A,#000);
+    border-radius: 14px;
+    content: "";
+    height: 100%;
+    left: -1px;
+    padding: 0!important;
+    position: absolute;
+    top: -1px;
+    width: calc(100% + 2px);
+    z-index: -1
+}
+
+.mobile .common-group-section .last-winner .common-section .title-wrapper {
+    margin-top: 0
+}
+
+.mobile .common-group-section .last-winner .common-section {
+    margin: 0
+}
+
+.common-group-section .last-winner .content-wrapper {
+    background: url(https://files.sitestatic.net/assets/imgs/kixplays_game_bg.png) no-repeat 0 0,linear-gradient(180deg,#1B5E20,#030703);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 14px;
+    display: inline-block;
+    overflow: initial!important;
+    padding: 20px 64px;
+    width: 100%
+}
+
+.common-group-section .last-winner .content-wrapper:before {
+    background: linear-gradient(180deg,#67C94A,#000);
+    border-radius: 14px;
+    content: "";
+    height: 100%;
+    left: -1px;
+    padding: 0!important;
+    position: absolute;
+    top: -1px;
+    width: calc(100% + 2px);
+    z-index: -1
+}
+
+.mobile .common-group-section .last-winner .content-wrapper {
+    padding: 20px 0
+}
+
+.common-group-section .last-winner li {
+    margin: 5px 16px!important;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+.common-group-section .last-winner li:before {
+    background: linear-gradient(180deg,#67C94A,#000);
+    border-radius: 14px;
+    content: "";
+    height: 100%;
+    left: -1px;
+    padding: 0!important;
+    position: absolute;
+    top: -1px;
+    width: calc(100% + 2px);
+    z-index: -1
+}
+
+.common-group-section .last-winner li .flex-start {
+    background: url(https://files.sitestatic.net/assets/imgs/kixplays_game_bg.png) no-repeat 0 0,linear-gradient(180deg,#1B5E20,#030703);
+    background-position: 100% 0;
+    background-size: 100%;
+    border-radius: 14px;
+    height: 70px;
+    padding: 10px;
+    width: 300px
+}
+
+.mobile .common-group-section .last-winner li .flex-start {
+    padding: 20px 8px;
+    width: 100%
+}
+
+.common-group-section .last-winner-img {
+    background-color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    height: 50px;
+    width: 50px
+}
+
+.common-group-section .last-winner-name span {
+    color: #fff;
+    font-family: Barlow,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 0 10px;
+    padding-left: 5px;
+    text-transform: capitalize
+}
+
+.mobile .common-group-section .last-winner-name span {
+    font-size: 18px;
+    margin-left: 0;
+    padding-left: 0
+}
+
+.common-group-section .last-winner-amount span {
+    color: #fff;
+    font-family: Barlow,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 5px;
+    text-transform: uppercase
+}
+
+.common-title {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg,#fff 18.18%,#FFF4C2 69.12%);
+    -webkit-background-clip: text;
+    display: inline-block;
+    font-family: Sora,sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    vertical-align: middle
+}
+
+.popular-section .common-title {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 130px)
+}
+
+/* =======================================================
+   ANIMASI UNTUK WARNA HIDUP (FLOW & PULSE) - OCEAN x WHITE
+   ======================================================= */
+@keyframes lighthouseFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes lighthousePulse {
+    0% { box-shadow: 0 0 5px rgba(212, 175, 55, 0.4); }
+    50% { box-shadow: 0 0 16px rgba(255, 217, 90, 0.95), 0 0 12px rgba(240, 248, 275, 0.7); }
+    100% { box-shadow: 0 0 5px rgba(212, 175, 55, 0.4); }
+}
+
+/* =======================================================
+   1. DISABLED LINK AFTER EFFECT (BIRU LAUT - BIRU NEON - PUTIH ES BERGERAK)
+   ======================================================= */
+.a-disabledLink:after {
+    background: linear-gradient(135deg, #D4AF37 0%, #67C94A 50%, #FFF4C2 100%) !important;
+    background-size: 200% auto !important;
+    animation: lighthouseFlow 3s linear infinite !important; /* Efek garis mengalir lembut */
+    transition: .5s ease;
+}
+
+/* =======================================================
+   2. TEXT & ICON TOP BAR MOBILE (GRADASI HIDUP BIRU & PUTIH)
+   ======================================================= */
+.mobile .top-bar a, 
+.mobile .top-bar button {
+    background: linear-gradient(135deg, #D4AF37 0%, #67C94A 50%, #FFF4C2 100%) !important;
+    background-size: 200% auto !important;
+    animation: lighthouseFlow 4s linear infinite !important; /* Teks gradasinya jalan bergantian warna secara halus */
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+/* =======================================================
+   3. BORDER TOMBOL BULAT (#btnToggleRSideNav) - OCEAN BLUE & ICE WHITE DUAL GLOW
+   ======================================================= */
+.mobile .top-bar #btnToggleRSideNav {
+    border: 1px solid #67C94A !important; /* Border Biru Neon Menyala */
+    border-radius: 50px;
+    float: left;
+    height: 30px;
+    line-height: 24px;
+    margin: 0 10px;
+    padding: 0;
+    text-align: center;
+    width: 30px;
+    animation: lighthousePulse 2.5s infinite ease-in-out !important; /* Efek pendaran dual glow biru & putih berdenyut */
+}
+
+.mobile .top-bar #btnToggleRSideNav i.icon-user-o {
+    font-size: 16px;
+    line-height: 0px
+}
+
+.mobile .common-top-section .tab-content-inner {
+    margin-bottom: 20px;
+    padding: 0 20px 30px
+}
+
+.mobile .common-top-section .tab-content-inner .tab-content {
+    min-height: 170px;
+    padding-bottom: 0
+}
+
+.mobile .theme-UL-style {
+    width: calc(100% - 30px)
+}
+
+.mobile .promotion-section {
+    padding: 0
+}
+
+.mobile .promotion-section .promotion-single-inner~.promotion-single-inner {
+    margin-top: 15px
+}
+
+.desktop .site-footer {
+    background: linear-gradient(0deg,#131313,#131313)
+}
+
+.desktop .footer-content .footerlink ul li,.desktop .footer-content .footerlink ul li a,.footer-misc,.title {
+    color: #fff
+}
+
+.button.is-outline {
+    background-color: #000;
+    border-color: #000
+}
+
+.social-icons i {
+    color: #fff
+}
+
+.dotted_line {
+    border-bottom: 5px solid #030703
+}
+
+.ann-wrapper {
+    color: #FFF4C2
+}
+
+.ann-wrapper i {
+    color: #fff
+}
+
+.desktop .carousel-indicators {
+    bottom: 30px
+}
+
+.desktop .main.nav-wrapper {
+    background: linear-gradient(180deg,#2f2e2e,#2f2e2e)
+}
+
+.hot-games .games-leave-active {
+    -webkit-animation: leave 80s linear;
+    animation: leave 80s linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running
+}
+
+.hot-games .games-leave-active:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
+}
+
+.hot-games .games-leave-active.run {
+    -webkit-animation-play-state: running;
+    animation-play-state: running
+}
+
+.hot-games .games-leave-active.pause {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
+}
+
+.hot-games .games-enter-active {
+    -webkit-animation: leave 80s linear;
+    animation: leave 80s linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running
+}
+
+.hot-games .games-enter-active:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
+}
+
+.hot-games .games-enter-active.run {
+    -webkit-animation-play-state: running;
+    animation-play-state: running
+}
+
+.hot-games .games-enter-active.pause {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
+}
+
+.hot-games.round .games-leave-active {
+    -webkit-animation: leave 25s linear;
+    animation: leave 25s linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running
+}
+
+.hot-games.round .games-leave-active:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
+}
+
+.hot-games.round .games-leave-active.run {
+    -webkit-animation-play-state: running;
+    animation-play-state: running
+}
+
+.hot-games.round .games-leave-active.pause {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
+}
+
+.hot-games.round .games-enter-active {
+    -webkit-animation: leave 25s linear;
+    animation: leave 25s linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running
+}
+
+.hot-games.round .games-enter-active:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
+}
+
+.hot-games.round .games-enter-active.run {
+    -webkit-animation-play-state: running;
+    animation-play-state: running
+}
+
+.hot-games.round .games-enter-active.pause {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
+}
+
+.promo-banner-title {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg,#fff 18.18%,#FFF4C2 69.12%);
+    -webkit-background-clip: text;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.promo-banner-description {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center
+}
+
+.circular-progress-bar {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 120px
+}
+
+.progress__meter,.progress__value {
+    fill: none
+}
+
+.progress__meter {
+    stroke: #1B5E20;
+    stroke-width: 5px
+}
+
+.progress__value {
+    stroke-linecap: round
+}
+
+.progress__bar {
+    margin: 0 auto;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg)
+}
+
+.deposit-progress__meter,.deposit-progress__value {
+    fill: none
+}
+
+.deposit-progress__meter {
+    stroke: #1B5E20;
+    stroke-width: 5px
+}
+
+.deposit-progress__value {
+    stroke-linecap: round
+}
+
+/* =======================================================
+   AUTO-BOX & NAV HOVER - OCEAN BLUE & ICE WHITE
+   ======================================================= */
+.auto-box:hover a,
+.auto-box:hover a:after,
+.main-nav a:hover,
+.nav-item:hover .navlink {
+    /* Gradasi disesuaikan dari Biru Tua (#8C6B16), Biru Laut Terang (#67C94A), ke Putih Es (#FFF4C2) */
+    background: linear-gradient(1turn, #8C6B16, #67C94A 43.57%, #FFF4C2) !important;
+    transition: .5s ease;
+}
+
+.online-users {
+    margin-top: 50px
+}
+
+.mobile .online-users {
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    border-top: 1px solid rgba(0,0,0,.2);
+    padding-top: 10px
+}
+
+.online-users .icon-outer {
+    background: linear-gradient(180deg,#67C94A 0,#0B2A0F);
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 18px;
+    height: 2em;
+    vertical-align: middle;
+    width: 2em
+}
+
+.online-users .icon-outer .icon-wrp {
+    background: #0B2A0F;
+    border-radius: 4px 4px 0 0;
+    display: -webkit-flex;
+    display: flex;
+    height: 94%;
+    place-content: center;
+    place-items: center;
+    width: 94%
+}
+
+.online-users .icon-outer .icon-wrp i {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(1turn,#fff,#fff 43.57%,#fff);
+    -webkit-background-clip: text
+}
+
+.online-users .mail-color {
+    -webkit-text-fill-color: transparent;
+    word-wrap: break-word;
+    background: linear-gradient(180deg,#fff 0,#fff 100%,#fff 0,#fff 0);
+    -webkit-background-clip: text;
+    font-size: 12px;
+    font-weight: 900;
+    margin: 2px 0
+}
+
+.online-users .support-font {
+    color: #FFF4C2;
+    font-size: 15px;
+    font-weight: 600
+}
+
+.online-users .line-font {
+    font-size: 13px
+}
+
+.online-users .icon-label {
+    box-sizing: border-box;
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: middle;
+    width: calc(100% - 40px)
+}
+
+.main.nav-wrapper .nav-item-content {
+    background-color: #0B2A0F;
+    border-bottom: 15px solid #0B2A0F
+}
+
+.width-60 {
+    width: 60%
+}
+
+@media (max-width: 768px) {
+    .width-60 {
+        margin:auto;
+        width: 98%
+    }
+}
+
+.width-40 {
+    width: 40%
+}
+
+@media (max-width: 768px) {
+    .width-40 {
+        margin:auto;
+        width: 98%
+    }
+}
+
+.plr-8 {
+    padding-left: 8px;
+    padding-right: 8px
+}
+
+.top-section .width-40 {
+    width: 100%
+}
+
+@media (max-width: 768px) {
+    .top-section .width-40 {
+        margin:auto;
+        width: 98%
+    }
+}
+
+.fw-bold {
+    font-weight: 700
+}
+
+.lw-loop-content {
+    border-radius: 15px;
+    height: 190px;
+    overflow: hidden;
+    position: relative
+}
+
+@media (max-width: 768px) {
+    .lw-loop-content {
+        height:300px
+    }
+}
+
+.theme-UL-style {
+    border-radius: 8px;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.theme-UL-style::-webkit-scrollbar {
+    display: none;
+    width: 5px
+}
+
+.theme-UL-style:hover::-webkit-scrollbar {
+    display: block
+}
+
+.theme-UL-style:hover::-webkit-scrollbar-track {
+    background: #f1f1f1
+}
+
+.theme-UL-style:hover::-webkit-scrollbar-thumb {
+    background: #3FAE2A;
+    border-radius: 100px
+}
+
+.theme-UL-style:hover::-webkit-scrollbar-thumb:hover {
+    background: #3FAE2A
+}
+
+.theme-UL-style li {
+    border-bottom: 1px solid #5A430B;
+    padding: 10px 0
+}
+
+.theme-UL-style li .LW-div .wd-item__avatar {
+    margin-right: 8px;
+    width: 35px
+}
+
+@media (max-width: 768px) {
+    .theme-UL-style li .LW-div .wd-item__avatar {
+        padding-right:5px
+    }
+}
+
+.theme-UL-style li .LW-btn {
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: flex;
+    font-family: Sora,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    -webkit-justify-content: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 70px
+}
+
+@media (max-width: 768px) {
+    .theme-UL-style li .LW-btn {
+        padding:3px 10px;
+        width: 90px
+    }
+}
+
+.LW-font {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 5px
+}
+
+.LW-date-font {
+    color: #fff;
+    font-size: 9px;
+    min-width: 125px
+}
+
+.LW-secondary-color {
+    color: #67C94A
+}
+
+.ann-wrapper {
+    background-color: transparent;
+    background-image: none;
+    margin-top: 0;
+    position: relative;
+    width: 30%;
+    z-index: 9
+}
+
+.mobile .ann-wrapper {
+    width: 100%
+}
+
+.ann-wrapper .ann-content {
+    width: 85%
+}
+
+.main-nav,.main-nav .nav-item {
+    overflow: initial!important
+}
+
+.main-nav .nav-item {
+    transition: .2s
+}
+
+.main-nav .nav-item.is-active,.main-nav .nav-item:hover {
+    background-color: transparent!important;
+    transition: .2s ease
+}
+
+/* =======================================================
+   NAVIGASI UTAMA - OCEAN BLUE & ICE WHITE
+   ======================================================= */
+.main-nav .nav-item.is-active .navlink,
+.main-nav .nav-item:hover .navlink {
+    /* Gradasi dari Biru Laut Gelap (#8C6B16), Biru Neon Terang (#67C94A), ke Putih Es (#FFF4C2) */
+    background: linear-gradient(1turn, #8C6B16, #67C94A 43.57%, #FFF4C2) !important;
+    color: #030703 !important; /* Teks warna gelap agar sangat kontras di atas gradasi terang */
+    text-shadow: none !important;
+    -webkit-transform: skew(-20deg);
+    transform: skew(-20deg);
+    transition: .5s ease;
+}
+
+.main-nav .nav-item.is-active .navlink .nav-icon,.main-nav .nav-item:hover .navlink .nav-icon {
+    left: -5px;
+    position: relative;
+    -webkit-transform: skew(20deg);
+    transform: skew(20deg);
+    transition: .5s ease
+}
+
+.main-nav .nav-item.is-active .navlink .nav-title,.main-nav .nav-item:hover .navlink .nav-title {
+    left: 5px;
+    position: relative;
+    -webkit-transform: skew(20deg);
+    transform: skew(20deg);
+    transition: .5s ease
+}
+
+.desktop .carousel-indicators {
+    left: 0;
+    margin: 0 auto;
+    right: 0
+}
+
+.desktop .carousel-indicators li {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: block;
+    display: inline-block;
+    height: 5px;
+    margin: 0 5px;
+    opacity: .5;
+    width: 50px
+}
+
+.desktop .carousel-indicators li.active {
+    background-color: #fff;
+    height: 5px;
+    margin-bottom: 0;
+    opacity: 1;
+    width: 50px
+}
+
+.mobile .carousel-indicators {
+    left: 0;
+    margin: 0 auto;
+    right: 0
+}
+
+.mobile .carousel-indicators li {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: block;
+    display: inline-block;
+    height: 5px;
+    margin: 0 5px;
+    opacity: .5;
+    width: 30px
+}
+
+.mobile .carousel-indicators li.active {
+    background-color: #fff;
+    height: 5px;
+    margin-bottom: 0;
+    opacity: 1;
+    width: 30px
+}
+
+.jackpot {
+    font-family: Sora,sans-serif;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-top: 10px
+}
+
+.header-wrapper {
+    background: #030703
+}
+
+/* =======================================================
+   1. Tombol Kiri (btn-accent) - Gradasi Biru Laut ke Biru Neon
+   ======================================================= */
+.header-wrapper .fix.btn-accent {
+    background: linear-gradient(135deg, #D4AF37 0%, #67C94A 100%) !important;
+    border: 1px solid #67C94A !important;
+    color: #FFF4C2 !important; /* Teks Putih Es tajam */
+    text-shadow: 0 1px 2px rgba(5, 11, 20, 0.8) !important;
+    border-radius: 0;
+    font-weight: 600;
+    margin-left: 0!important;
+    -webkit-transform: skew(-20deg);
+    transform: skew(-20deg);
+    transition: .5s ease;
+}
+
+/* =======================================================
+   2. Tombol Kanan (btn-tertiery) - Gradasi Biru Neon ke Putih Es
+   ======================================================= */
+.header-wrapper .fix.btn-tertiery {
+    background: linear-gradient(135deg, #67C94A 0%, #FFF4C2 100%) !important;
+    border: 1px solid #67C94A !important;
+    color: #030703 !important; /* Teks Biru Gelap agar kontras di atas latar putih */
+    text-shadow: none !important;
+    border-radius: 0;
+    font-weight: 600;
+    margin-right: 2px!important;
+    -webkit-transform: skew(-20deg);
+    transform: skew(-20deg);
+    transition: .5s ease;
+}
+
+/* =======================================================
+   3. Efek Hover Saat Disentuh Kursor (Glowing Biru & Putih Es)
+   ======================================================= */
+.header-wrapper .fix.btn-accent:hover {
+    border: 1px solid #FFF4C2 !important;
+    box-shadow: inset 0 0 10px 0 #D4AF37, 0 0 18px 0 #67C94A !important; /* Glow dalam biru tua, luar biru neon menyala */
+    transition: .5s ease;
+}
+
+.header-wrapper .fix.btn-tertiery:hover {
+    border: 1px solid #D4AF37 !important;
+    box-shadow: inset 0 0 10px 0 #67C94A, 0 0 18px 0 #FFF4C2 !important; /* Glow dalam biru neon, luar putih es menyala */
+    transition: .5s ease;
+}
+
+/* Menjaga teks di dalam tombol tetap lurus (tidak ikut miring) */
+.header-wrapper .fix.btn-accent span {
+    display: inline-block;
+    -webkit-transform: skew(20deg);
+    transform: skew(20deg);
+}
+
+.header-wrapper .fix.btn-tertiery span {
+    display: inline-block;
+    -webkit-transform: skew(20deg);
+    transform: skew(20deg)
+}
+
+.header-wrapper .fix.btn-tertiery:hover {
+    border: 1px solid #d2bfcc;
+    box-shadow: inset 0 0 10px 0 #d2bfcc,0 0 10px 0 #d2bfcc;
+    transition: .5s ease
+}
+
+.header-wrapper .flex-right .flex-row i {
+    color: #fff;
+    font-weight: 500;
+    transition: .5s ease
+}
+
+.header-wrapper .flex-right .flex-row i:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    transition: .5s ease
+}
+
+.header-wrapper .flex-right .flex-row .button.icon.circle {
+    background-color: transparent
+}
+
+.header-wrapper .flex-right .flex-row .compliant-btn {
+    background: #8C6B16;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 5px;
+    padding: 0 10px
+}
+
+.header-wrapper .flex-right .flex-row .compliant-btn i {
+    color: #fff;
+    font-size: 14px
+}
+
+.header-wrapper .line {
+    background-color: #fff
+}
+
+.top-bar .inner-header {
+    background: #030703
+}
+
+.jackpot-wraper {
+    width: 100%
+}
+
+.jackpot-wraper #jackpot_amount {
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 45px;
+    text-align: center;
+    width: 100%
+}
+
+.mobile .jackpot-wraper #jackpot_amount {
+    font-size: 20px;
+    margin-left: 0;
+    margin-top: 0
+}
+
+.desktop .popular-section .g-slider-wrapper {
+    margin: 1px;
+    padding: 0
+}
+
+.desktop .popular-section .g-slider-wrapper.widget-wrapper .widget-wrapper-image {
+    border-radius: 16px 16px 0 0;
+    display: inline-block;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+.desktop .popular-section .g-slider-wrapper.widget-wrapper .game-box {
+    background: url(https://files.sitestatic.net/assets/imgs/kixplays_game_bg.png) no-repeat 0 0,linear-gradient(180deg,#1B5E20,#030703);
+    background-position: 100% 0;
+    background-size: 100%;
+    border-radius: 14px;
+    float: left;
+    height: 100%;
+    padding: 15px;
+    width: 270px
+}
+
+.desktop .popular-section .g-slider-wrapper.widget-wrapper .game-box .widget-wrapper-image-img {
+    border: 1px solid #fff;
+    box-shadow: 3px 4px 4px rgba(0,0,0,.33);
+    height: auto;
+    -o-object-fit: fill;
+    object-fit: fill;
+    -o-object-position: center;
+    object-position: center;
+    width: 100%
+}
+
+.desktop .popular-section .g-slider-wrapper.widget-wrapper .gamebox-large img {
+    height: 160px;
+    width: 100%
+}
+
+.desktop .popular-section .g-slider-wrapper.widget-wrapper .game-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
+    padding: 0;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%
+}
+
+.desktop .popular-section .g-slider-wrapper.widget-wrapper .game-title span {
+    display: block;
+    font-family: Sora,sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.desktop .popular-section .g-slider-wrapper li {
+    border-radius: 14px;
+    box-shadow: 3px 4px 4px rgba(0,0,0,.33);
+    display: inline-block;
+    margin: 6px 5px;
+    position: relative;
+    text-align: center
+}
+
+.desktop .popular-section .g-slider-wrapper li,.desktop .popular-section .g-slider-wrapper li:hover {
+    background: linear-gradient(180deg,#1B5E20,#030703)
+}
+
+.desktop .popular-section .g-slider-wrapper li:before {
+    background: linear-gradient(180deg,#67C94A,#000);
+    border-radius: 14px;
+    content: "";
+    height: 100%;
+    left: -1px;
+    padding: 0!important;
+    position: absolute;
+    top: -1px;
+    width: calc(100% + 2px);
+    z-index: -1
+}
+
+.moregame-link {
+    color: #D4AF37;
+    font-weight: 700;
+    margin-top: 10px
+}
+
+.mobile .top-section {
+    background: transparent;
+    border-top: none;
+    padding: 0
+}
+
+.mobile .top-section .common-title {
+    font-size: 12px;
+    margin-top: 12px
+}
+
+.mobile .top-section .jackpot-wraper {
+    margin-top: 15px
+}
+
+.mobile .top-section .jackpot-wraper .jackpot {
+    border-radius: 8px
+}
+
+.mobile .top-section .jackpot-wraper .jackpot .text-content {
+    font-size: 18px;
+    margin-top: 0;
+    padding-top: 0
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+    .mobile .top-section .jackpot-wraper .jackpot .text-content {
+        display:inline-block;
+        font-size: 44px;
+        margin-top: 20px
+    }
+}
+
+.mobile .top-section .top-section-inner {
+    background-image: none;
+    padding: 0 20px
+}
+
+.mobile .top-section .col-width-full {
+    width: 100%
+}
+
+.mobile .title-wrapper {
+    background-color: transparent;
+    border-radius: 8px;
+    margin: 20px 0 5px;
+    width: 100%
+}
+
+.mobile .common-title {
+    font-size: 18px!important;
+    margin: 0;
+    text-align: center;
+    width: 100%
+}
+
+.mobile .popular-section {
+    background: transparent;
+    border-top: none;
+    padding: 0
+}
+
+.mobile .g-slider-wrapper.widget-wrapper {
+    background: transparent;
+    border-radius: 8px;
+    padding: 15px 0;
+    position: relative
+}
+
+.mobile .g-slider-wrapper .btn-link {
+    top: 90%
+}
+
+.mobile .g-slider-wrapper .btn-link.btn-next {
+    left: auto;
+    right: 0;
+    top: -20px
+}
+
+.mobile .g-slider-wrapper .btn-link.btn-prev {
+    left: auto;
+    right: 33px;
+    top: -20px
+}
+
+.mobile .g-slider-wrapper li {
+    background: #0B2A0F;
+    border-radius: 14px;
+    border-top: 1px solid linear-gradient(180deg,#67C94A,#000);
+    box-shadow: 3px 4px 4px rgba(0,0,0,.33);
+    display: inline-block;
+    margin: 6px;
+    padding: 0;
+    position: relative;
+    text-align: center
+}
+
+.mobile .g-slider-wrapper li:hover,.mobile .g-slider-wrapper li:hover:before {
+    background: linear-gradient(180deg,#1B5E20,#030703)
+}
+
+.mobile .g-slider-wrapper li:before {
+    background: linear-gradient(180deg,#67C94A,#000);
+    border-radius: 14px;
+    content: "";
+    height: 100%;
+    left: -1px;
+    padding: 0!important;
+    position: absolute;
+    top: -1px;
+    width: calc(100% + 2px);
+    z-index: -1
+}
+
+.mobile .g-slider-wrapper .widget-wrapper-image {
+    background: url(https://files.sitestatic.net/assets/imgs/kixplays_game_bg.png) no-repeat 0 0,linear-gradient(180deg,#1B5E20,#030703);
+    background-position: 100% 0;
+    background-size: cover;
+    float: left;
+    height: 100%;
+    padding: 5px;
+    width: 150px
+}
+
+.mobile .g-slider-wrapper .game-box {
+    border-radius: 14px;
+    margin: 0;
+    padding: 8px
+}
+
+.mobile .g-slider-wrapper .game-box .widget-wrapper-image-img {
+    height: auto;
+    margin: 0 auto;
+    -o-object-fit: fill;
+    object-fit: fill;
+    -o-object-position: center;
+    object-position: center;
+    width: 100%
+}
+
+.mobile .g-slider-wrapper .gamebox-large {
+    display: inline-block
+}
+
+.mobile .g-slider-wrapper .gamebox-large img {
+    height: 160px;
+    width: 100%
+}
+
+.mobile .g-slider-wrapper .game-title {
+    display: block;
+    font-weight: 400;
+    margin-top: 5px;
+    padding: 0;
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%
+}
+
+.mobile .g-slider-wrapper .game-title span {
+    display: block;
+    font-family: Sora,sans-serif;
+    line-height: 12px;
+    overflow: hidden;
+    padding: 5px 2px;
+    text-overflow: ellipsis
+}
+
+.mobile .g-slider-wrapper .lw-loop-content {
+    margin: 5px 0;
+    overflow: hidden;
+    padding: 15px;
+    position: relative
+}
+
+.mobile .g-slider-wrapper .lw-loop-content ul {
+    left: 0;
+    width: 100%
+}
+
+.mobile .g-slider-wrapper .lw-loop-content ul li {
+    background: linear-gradient(180deg, #0B2A0F, #030703); /* Diubah dari ungu ke gradasi pink/magenta gelap */
+    display: block;
+    margin-bottom: 20px!important
+}
+
+.mobile .g-slider-wrapper .lw-loop-content ul li .LW-btn {
+    color: #67C94A;
+    font-weight: 700
+}
+
+.mobile .g-slider-wrapper .lw-loop-content ul li .LW-div .wd-item__avatar {
+    margin-right: 10px;
+    width: 45px
+}
+
+@media (max-width: 768px) {
+    .mobile .g-slider-wrapper .lw-loop-content ul li .LW-div .wd-item__avatar {
+        padding-right:5px
+    }
+}
+
+.mobile .Popular-slider {
+    background: linear-gradient(0deg,hsla(0,0%,45%,.2),hsla(0,0%,45%,.2));
+    border-radius: 8px;
+    padding: 15px;
+    position: relative
+}
+
+/* =======================================================
+   ANIMASI UNTUK EFEK HIDUP (FLOW & PULSE) - BLUE x WHITE
+   ======================================================= */
+@keyframes lighthouseFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes lighthouseGlowPulse {
+    0% { box-shadow: 0 0 6px rgba(212, 175, 55, 0.4); }
+    50% { box-shadow: 0 0 18px rgba(255, 217, 90, 0.95), 0 0 14px rgba(240, 248, 275, 0.8); }
+    100% { box-shadow: 0 0 6px rgba(212, 175, 55, 0.4); }
+}
+
+/* =======================================================
+   1. Timpa warna background & teks dasar kedua tombol (Biru & Putih)
+   ======================================================= */
+.mobile .btns-log .btn-accent, 
+.mobile .btns-log .btn-tertiery {
+    background: linear-gradient(135deg, #D4AF37 0%, #67C94A 50%, #FFF4C2 100%) !important; /* Gradasi Biru ke Putih Es */
+    background-size: 200% auto !important;
+    animation: lighthouseFlow 4s linear infinite !important; 
+    color: #FFF4C2 !important; /* Teks Putih Es */
+    font-weight: 600 !important;
+    text-shadow: 0 1px 2px rgba(5, 11, 20, 0.8) !important; 
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* =======================================================
+   2. Khusus Tombol DAFTAR (.btn-accent) 
+   ======================================================= */
+.mobile .btns-log .btn-accent {
+    background: linear-gradient(135deg, #67C94A 0%, #D4AF37 50%, #FFF4C2 100%) !important; 
+    border: 1px solid #67C94A !important; /* Border Biru Neon */
+    border-radius: 0 !important;
+    color: #FFF4C2 !important; 
+    text-shadow: 0 1px 2px rgba(5, 11, 20, 0.8) !important;
+    animation: lighthouseFlow 4s linear infinite, lighthouseGlowPulse 2.5s infinite ease-in-out !important; 
+}
+
+/* =======================================================
+   3. Khusus Tombol LOGIN (.btn-tertiery) 
+   ======================================================= */
+.mobile .btns-log .btn-tertiery {
+    background: #030703 !important; /* Biru Sangat Gelap / Hitam Laut */
+    border: 1px solid #67C94A !important; /* Border Biru Neon */
+    border-radius: 0 !important;
+    color: #67C94A !important; /* Tulisan Biru Neon */
+    text-shadow: 0 0 6px rgba(0, 179, 255, 0.6) !important; /* Efek glow lembut warna biru pada teks */
+}
+
+.mobile .mob-row-rev {
+    direction: rtl;
+    display: -webkit-flex;
+    display: flex
+}
+
+.mobile .moregame-link {
+    margin-top: 5px
+}
+
+body {
+    font-family: Sora,sans-serif
+}
+
+body,body.mobile {
+    background: #020203
+}
+
+.lw-horizontal-slider .gradient-bg {
+    background: #0B2A0F
+}
+
+.desktop .deposit-withdraw-div .info-section {
+    background: url(https://files.sitestatic.net/assets/imgs/kixplays_game_bg.png) no-repeat 0 0,linear-gradient(180deg,#1B5E20,#030703);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid linear-gradient(180deg,#67C94A,#000);
+    border-radius: 14px;
+    margin: 1px
+}
+
+.deposit-withdraw-div .info-section:after {
+    background: linear-gradient(180deg,#67C94A,#000);
+    border-radius: 14px;
+    content: "";
+    height: 100%;
+    left: -1px;
+    padding: 0!important;
+    position: absolute;
+    top: -1px;
+    width: calc(100% + 2px);
+    z-index: -1
+}
+
+.mobile .deposit-section {
+    background: url(https://files.sitestatic.net/assets/imgs/kixplays_game_bg.png) no-repeat 0 0,linear-gradient(180deg,#1B5E20,#030703);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid linear-gradient(180deg,#67C94A,#000);
+    border-radius: 14px
+}
+
+.mobile .btns-log .btn-accent {
+    border-left: 1px solid #727272
+}
+
+.mobile .scroll-wrapper[_home] .slider-content {
+    background: #000
+}
+
+.mobile .scroll-wrapper[_home] .next-btn,.mobile .scroll-wrapper[_home] .prev-btn {
+    background: #0B2A0F
+}
+
+.desktop .g-slider-wrapper {
+    padding-top: 4px
+}
+
+.desktop .g-slider-wrapper .content-wrapper {
+    overflow: hidden
+}
+
+.desktop .g-slider-wrapper ul {
+    list-style-type: none;
+    margin: 0;
+    overflow-y: hidden;
+    padding: 0;
+    white-space: nowrap
+}
+
+.desktop .g-slider-wrapper ul::-webkit-scrollbar {
+    display: none
+}
+
+.desktop .g-slider-wrapper ul {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+.desktop .g-slider-wrapper li {
+    display: inline-block;
+    position: relative
+}
+
+.desktop .g-slider-wrapper img {
+    border-radius: 5px;
+    display: block;
+    height: 100%;
+    width: 100%
+}
+
+.desktop .g-slider-wrapper a.game-box,.desktop .g-slider-wrapper div.game-box {
+    color: inherit;
+    display: block;
+    height: 150px;
+    margin-right: 30px;
+    position: relative;
+    width: 150px
+}
+
+.desktop .g-slider-wrapper .game-title {
+    font-size: 11.2px;
+    overflow: hidden;
+    text-transform: uppercase
+}
+/* =======================================================
+   NAVIGASI UTAMA - OCEAN BLUE & ICE WHITE
+   ======================================================= */
+.main-nav a.active,
+.main-nav a:hover,
+.nav-item:hover .navlink {
+    /* Gradasi biru laut dalam ke biru neon (ombak) */
+    background: linear-gradient(90deg, #D4AF37, #67C94A) !important;
+}
+
+.main-nav .nav-item .navlink {
+    color: #67C94A !important; /* Biru neon terang saat diam */
+}
+
+.main-nav .nav-item:hover .navlink {
+    color: #FFF4C2 !important; /* Putih es saat disentuh */
+    text-shadow: 0 0 5px #3FAE2A !important; /* Sedikit sentuhan glow emas */
+}
+
+.a-disabledLink:after,
+.auto-box:hover a:after,
+.main-nav .nav-item:hover .navlink {
+    background: linear-gradient(90deg, #D4AF37, #67C94A) !important;
+}
+
+/* =======================================================
+   ANIMASI OCEAN FLOW & DUAL GLOW (BLUE x GOLD)
+   ======================================================= */
+@keyframes oceanFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes lighthousePulse {
+    /* Glow gabungan: Biru air dan Cahaya Emas mercusuar */
+    0% { box-shadow: 0 0 8px rgba(0, 179, 255, 0.5); }
+    50% { box-shadow: 0 0 22px rgba(255, 217, 90, 0.95), 0 0 18px rgba(255, 184, 0, 0.85); }
+    100% { box-shadow: 0 0 8px rgba(0, 179, 255, 0.5); }
+}
+
+/* =======================================================
+   ICON TRANSFER - BLUE WAVES & ICE WHITE GLOW
+   ======================================================= */
+i.icon-transfer, .icon-transfer {
+    background: linear-gradient(135deg, #67C94A 0%, #D4AF37 50%, #FFF4C2 100%) !important;
+    background-size: 200% 200% !important;
+    animation: oceanFlow 3s ease infinite !important;
+    color: #FFF4C2 !important; /* Ice white */
+    text-shadow: 0 1px 2px rgba(5, 11, 20, 0.8) !important; /* Bayangan gelap #030703 */
+    box-shadow: 0 0 12px rgba(0, 179, 255, 0.7), 0 0 10px rgba(255, 184, 0, 0.5) !important;
+}
+
+/* =======================================================
+   TOMBOL LOGIN / SUBMIT (GOLDEN LIGHTHOUSE)
+   ======================================================= */
+button.btn.btn-block.btn-primary.fs-lg.btn-submit {
+    /* Gradasi warna emas dari angka 77 */
+    background: linear-gradient(90deg, #3FAE2A 0%, #67C94A 50%, #CC7A00 100%) !important;
+    background-size: 200% auto !important;
+    animation: oceanFlow 4s linear infinite, lighthousePulse 3s infinite ease-in-out !important;
+    border: 1px solid #67C94A !important; 
+    color: #030703 !important; /* Teks warna biru sangat gelap agar kontras di atas emas */
+    font-weight: bold !important; 
+    box-shadow: 0 0 12px rgba(255, 184, 0, 0.7) !important; 
+    text-shadow: none !important; /* Dihilangkan agar teks gelap tetap tajam */
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Efek saat tombol disentuh / hover / focus / active */
+button.btn.btn-block.btn-primary.fs-lg.btn-submit:hover,
+button.btn.btn-block.btn-primary.fs-lg.btn-submit:focus,
+button.btn.btn-block.btn-primary.fs-lg.btn-submit:active {
+    /* Putih Es -> Emas -> Biru Gelap (efek pantulan dinamis) */
+    background: linear-gradient(90deg, #FFF4C2 0%, #3FAE2A 50%, #D4AF37 100%) !important;
+    background-size: 200% auto !important;
+    box-shadow: 0 0 25px rgba(255, 184, 0, 0.95), 0 0 20px rgba(0, 179, 255, 0.85) !important; 
+    color: #030703 !important;
+    opacity: 0.95 !important;
+}
+
+
+/* =========================================================
+   Goblin$88 BLUE THEME — COLOR ONLY
+   Layout, sizing, spacing, positioning, animation and assets unchanged.
+   ========================================================= */
+body,
+.mobile,
+#app,
+.main-wrapper,
+.page-wrapper {
+    background-color: #030A05 !important;
+    color: #FFF4C2 !important;
+}
+
+.header-wrapper,
+.header,
+.top-header,
+.mobile-header {
+    background-color: #030703 !important;
+    border-color: #3FAE2A !important;
+    box-shadow: 0 0 12px rgba(0,140,255,.35) !important;
+}
+
+.btn-primary,
+.btn-accent,
+.btn-tertiery,
+button.btn-primary,
+button.btn-accent {
+    background: linear-gradient(135deg,#8C6B16 0%,#3FAE2A 55%,#67C94A 100%) !important;
+    border-color: #67C94A !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 0 12px rgba(0,140,255,.45) !important;
+}
+
+.main-nav a.active,
+.main-nav a:hover,
+.nav-item:hover .navlink {
+    background: linear-gradient(90deg,#8C6B16,#3FAE2A) !important;
+    color: #FFFFFF !important;
+}
+
+.main-nav .navlink,
+.main-nav a {
+    color: #FFF4C2 !important;
+}
+
+.g-slider-wrapper ul li,
+.g-slider-wrapper .game-box,
+.g-slider-wrapper .widget-wrapper-image,
+.g-slider-wrapper .game-title,
+.hot-games .game-item,
+.hot-games .game-item .game-title {
+    background-color: #0B2A0F !important;
+    border-color: #D4AF37 !important;
+}
+
+.g-slider-wrapper ul li:before,
+.mobile .g-slider-wrapper li:before {
+    background: linear-gradient(180deg,#67C94A,#8C6B16) !important;
+}
+
+.g-slider-wrapper .game-title,
+.g-slider-wrapper a.game-box .game_brand_name,
+.hot-games .game-title {
+    color: #FFF4C2 !important;
+}
+
+.deposit-section,
+.info-section,
+.deposit-withdraw-section {
+    background-color: #0B2A0F !important;
+    border-color: #3FAE2A !important;
+    box-shadow: 0 0 10px rgba(0,140,255,.20) !important;
+}
+
+.common-title,
+.section-title,
+.title-center,
+.lottery-title-center {
+    color: #FFF4C2 !important;
+    text-shadow: 0 0 8px rgba(0,179,255,.45) !important;
+}
+
+.footer,
+.main-footer,
+.bottom-nav,
+.mobile-footer {
+    background-color: #030703 !important;
+    border-color: #3FAE2A !important;
+    box-shadow: 0 -2px 12px rgba(0,140,255,.30) !important;
+}
+
+/* GOBLIN + CLOVER GREEN / GOLD — COLOR ONLY */
+body,.mobile,#app,.main-wrapper,.page-wrapper{background-color:#030A05!important;color:#FFD95A!important}
+.header-wrapper,.header,.top-header,.mobile-header{background:linear-gradient(180deg,#0B2A0F,#030A05)!important;border-color:#3FAE2A!important;box-shadow:0 0 14px rgba(24,168,50,.35)!important}
+.btn-primary,.btn-accent,.btn-tertiery,button.btn-primary,button.btn-accent{background:linear-gradient(135deg,#1B5E20 0%,#3FAE2A 55%,#D4AF37 100%)!important;border-color:#FFD95A!important;color:#fff!important;box-shadow:0 0 13px rgba(22,168,50,.45),0 0 5px rgba(240,211,106,.28)!important}
+.main-nav a.active,.main-nav a:hover,.nav-item:hover .navlink{background:linear-gradient(90deg,#1B5E20,#3FAE2A,#D4AF37)!important;color:#fff!important}
+.main-nav .navlink,.main-nav a{color:#67C94A!important}
+.g-slider-wrapper ul li,.g-slider-wrapper .game-box,.g-slider-wrapper .widget-wrapper-image,.g-slider-wrapper .game-title,.hot-games .game-item,.hot-games .game-item .game-title{background-color:#0B2A0F!important;border-color:#1B5E20!important}
+.g-slider-wrapper ul li:before,.mobile .g-slider-wrapper li:before{background:linear-gradient(180deg,#3FAE2A,#1B5E20,#D4AF37)!important}
+.g-slider-wrapper .game-title,.g-slider-wrapper a.game-box .game_brand_name,.hot-games .game-title{color:#FFD95A!important}
+.deposit-section,.info-section,.deposit-withdraw-section{background-color:#0B2A0F!important;border-color:#3FAE2A!important;box-shadow:0 0 10px rgba(22,168,50,.22)!important}
+.common-title,.section-title,.title-center,.lottery-title-center{color:#FFD95A!important;text-shadow:0 0 8px rgba(34,194,58,.40)!important}
+.footer,.main-footer,.bottom-nav,.mobile-footer{background-color:#030A05!important;border-color:#3FAE2A!important;box-shadow:0 -2px 13px rgba(22,168,50,.30)!important}
